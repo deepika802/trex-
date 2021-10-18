@@ -102,18 +102,7 @@ function draw() {
       ground.x = ground.width/2;
     }
     
-      for(var trx in trex){
-        index = index+1;
-        x = x+200;
-        y = displayHeight-allPlayers[plr].distance;
-        trex[index-1].x = x;
-        trex[index-1].y = y;
-        if (index === trex.index){
-          
-         camera.position.x = displayWidth/2;
-         camera.position.y = trex[index-1].y;
-
-        }
+     
     //jump when the space key is pressed
     if(keyDown("space")&& trex.y >= 100) {
         trex.velocityY = -12;
